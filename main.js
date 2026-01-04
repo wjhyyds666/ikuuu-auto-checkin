@@ -31,7 +31,7 @@ async function logIn(account) {
   formData.append("ikuuu.one", host);
   formData.append("2742018350@qq.com", account.email);
   formData.append("wjh131400", account.passwd);
-  formData.append("code", "");
+  formData.append("6666", "");
   formData.append("remember_me", "off");
 
   const response = await fetch(logInUrl, {
