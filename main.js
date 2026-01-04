@@ -28,10 +28,10 @@ async function logIn(account) {
   console.log(`${account.name}: 登录中...`);
 
   const formData = new FormData();
-  formData.append("ikuuu.one", host);
-  formData.append("2742018350@qq.com", account.email);
-  formData.append("wjh131400", account.passwd);
-  formData.append("6666", "");
+  formData.append("host", host);
+  formData.append("email", account.email);
+  formData.append("password", account.passwd);
+  formData.append("code", "");
   formData.append("remember_me", "off");
 
   const response = await fetch(logInUrl, {
